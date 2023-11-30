@@ -1,0 +1,227 @@
+.header{
+
+  flex: 100%;  
+  font-family: $fontFamily;
+
+    &__blackSection {
+    padding: 8px;
+    background-color: $themeBlack;
+    color: $themeWhite;
+  }
+
+  &__infoModules {
+    text-align: center;
+    font-size: 13px;
+
+    &--bold{
+      font-weight: bold;
+    }
+  }
+
+  &__whiteSection {
+    padding: 25px 0;
+    @media screen and (min-width: $medium) {
+      padding: 10px 25px;
+    }
+
+    
+    @media screen and (min-width: $large) {
+      padding: 10px 70px;
+    }
+    border-bottom: 2px solid $themeLightGrey;
+  }
+
+  &__contact{
+    display: none;
+    
+    @media screen and (min-width: $large) {
+      display: block;
+    }
+    
+
+    font-size: 11px;
+    
+    &--bold{
+      font-weight: bold;
+    }
+
+    &--separator{
+      color: $themeSeparatorGrey;
+    }
+
+    &--underLine{
+      text-decoration: underline;
+
+    }
+
+  }
+
+
+
+  &__content{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &>*{
+        flex: 1;
+      }
+  }
+}
+
+.socialMedia{
+  display: none;
+  @media screen and (min-width: $medium) {
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__listElement {
+    width: 28px;
+    height: 28px;
+    margin: 6px;
+    &:first-child{
+      margin-left: 0;
+    };
+
+    background-color: $themeBlack;
+    border-radius: 50%;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+
+    & i{
+      color: $themeWhite;
+
+    }
+  }
+}
+
+.logo{
+  img{
+    width: 137px;
+
+    @media screen and (min-width: $small) {
+      width: 178px;
+    }
+
+  }
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  @media screen and (min-width: $medium) {
+    justify-content: center;
+  }
+}
+
+
+.HeadersButtons{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.searchIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3px;
+
+  margin: 0;
+  width: auto;
+
+  @media screen and (min-width: $extralarge) {
+    width: 250px;
+    margin: 0 16px;
+    border: 1px solid $themeLightGrey;
+  }
+
+  &__form{
+
+    display: none;
+    @media screen and (min-width: $extralarge) {
+      display: block;
+    }
+
+    font-size: 18px;
+    color: $themeGrey;
+    padding: 14px 0 11px 15px;
+
+
+  }
+
+  &__icon{
+    width: 22px;
+    height: 22px;
+
+    padding: 9px 12px 9px 0;
+  }
+}
+
+.loginIcons{
+  width: 22px;
+  height: 22px;
+
+  margin: 0 12px;
+  @media screen and (min-width: $extralarge) {
+    margin: 0 16px;
+  }
+}
+
+
+.basket{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .basketIcons {
+    position: relative;
+    width: 22px;
+    height: 22px;
+
+    margin: 0 12px;
+    @media screen and (min-width: $extralarge) {
+      margin: 0 16px;
+    }
+
+    &__counter {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      z-index: 2;
+      background-color: $themeBlue;
+      border-radius: 50%;
+      overflow: hidden;
+      color: $themeWhite;
+      right: -6px;
+      top: 8px;
+
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+
+      font-size: 10px;
+    }
+  }
+
+  &__sum {
+    font-size: 13px;
+    margin: 0 5px 0 0;
+
+    display: none;
+    @media screen and (min-width: $large) {
+      display: block;
+    }
+  }
+}
+

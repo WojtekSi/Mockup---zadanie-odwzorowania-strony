@@ -1,0 +1,36 @@
+.baner1 {
+    background-image: url("../../assets/baners/small/katobrazkowa1.png");
+    background-size: cover;
+}
+.baner2 {
+    background-image: url("../../assets/baners/small/katobrazkowa2.png");
+    background-size: cover;
+}
+.baner3 {
+    background-image: url("../../assets/baners/small/katobrazkowa3.png");
+    background-size: cover;
+}
+.baner4 {
+    background-image: url("../../assets/baners/small/katobrazkowa4.png");
+    background-size: cover;
+}
+
+
+@media screen and (min-width: $large) {
+    .baner1 {
+        background-image: url("../../assets/baners/large/box.png");
+        background-size: cover;
+    }
+    .baner2 {
+        background-image: url("../../assets/baners/large/box_graficzny2.png");
+        background-size: cover;
+    }
+    .baner3 {
+        background-image: url("../../assets/baners/large/box_graficzny3.png");
+        background-size: cover;
+    }
+    .baner4 {
+        background-image: url("../../assets/baners/large/box_graficzny4.png");
+        background-size: cover;
+    }
+}

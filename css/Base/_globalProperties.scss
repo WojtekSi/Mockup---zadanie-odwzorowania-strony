@@ -1,0 +1,21 @@
+body {
+  font-family: $fontFamily;
+}
+
+header {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+
+  @media screen and (min-width: $medium) {
+    display: block;
+  }
+
+}
+
+main {
+  width: 100%
+}

@@ -1,0 +1,65 @@
+.Icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px;
+
+    @media screen and (min-width: $large) {
+      justify-content: space-between;
+      padding: 45px 75px;
+    }
+
+
+    .Icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4px;
+
+      flex: 40%;
+        @media screen and (min-width: $medium){
+          &{
+            flex: 1;
+          }
+        }
+      
+
+      &_img {
+        padding: 0 10px;
+        @media screen and (min-width: $large){
+          &{
+            padding: 0 20px;
+          }
+        }
+      }
+
+      &:last-child{
+        display: none;
+        @media screen and (min-width: $large){
+          &{
+            display: flex;
+          }
+        }
+      }
+
+      &_description{
+        color: $themeIconsGrey;
+      }
+
+      &__descUp{
+        font-family: $fontFamily2;
+        font-size: 14px;
+        font-weight: bold;
+        color: $themeIconsGrey;
+      }
+      
+      &__descDown{
+        font-family: Playfair Display;
+        font-size: 13px;
+        font-weight: medium;
+        color: $themeIconsGrey;
+      }
+
+    }
+  }
