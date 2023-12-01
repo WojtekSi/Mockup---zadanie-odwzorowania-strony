@@ -1,73 +1,70 @@
-.slider{
-    width: 100vw;
+.slider {
+  width: 100%;
 }
 
 .slider {
+  .btnNext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    height: 38px;
+    width: 38px;
+    cursor: pointer;
+    color: $themeBlack;
+    background-color: $themeWhite;
+    top: 40%;
+    right: 25px;
+    opacity: 0.4;
+    border-radius: 3px;
+
+    &:hover {
+      opacity: 1;
+      transition: opacity ease-out 0.3s;
+    }
+  }
+  .btnPrev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    height: 38px;
+    width: 38px;
+    cursor: pointer;
+    color: $themeBlack;
+    background-color: $themeWhite;
+    top: 40%;
+    left: 25px;
+    opacity: 0.4;
+    border-radius: 3px;
+    z-index: 1;
+    &:hover {
+      opacity: 1;
+      transition: opacity ease-out 0.3s;
+    }
+  }
+  @media screen and (min-width: $large) {
     .btnNext {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      height: 38px;
+      width: 38px;
 
-        position: absolute;
-        height: 38px;
-        width: 38px;
-        cursor: pointer;
-        color: $themeBlack;
-        background-color: $themeWhite;
-        top: 40%;
-        right: 25px;
-        opacity: 0.4;
-        border-radius: 3px;
-
-        &:hover{
-            opacity: 1;
-            transition: opacity ease-out 0.3s;
-        }
+      top: 50%;
+      right: 70px;
+      opacity: 0.4;
     }
     .btnPrev {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      height: 38px;
+      width: 38px;
 
-        position: absolute;
-        height: 38px;
-        width: 38px;
-        cursor: pointer;
-        color: $themeBlack;
-        background-color: $themeWhite;
-        top: 40%;
-        left: 25px;
-        opacity: 0.4;
-        border-radius: 3px;
-        z-index: 1;
-        &:hover{
-            opacity: 1;
-            transition: opacity ease-out 0.3s;
-        }
+      top: 50%;
+      left: 70px;
+      opacity: 0.4;
     }
-    @media screen and (min-width: $large){
-        .btnNext {
-            height: 38px;
-            width: 38px;
-
-            top: 50%;
-            right: 70px;
-            opacity: 0.4;
-        }
-        .btnPrev {
-            height: 38px;
-            width: 38px;
-
-            top: 50%;
-            left: 70px;
-            opacity: 0.4;
-        }
-    }
-
-
-
+  }
 }
 
-.mainSlider img{
-    width: 100%;
+.mainSlider img {
+  width: 100%;
 }

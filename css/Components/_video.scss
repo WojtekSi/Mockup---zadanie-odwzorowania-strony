@@ -1,0 +1,39 @@
+.video{
+    height: 490px;
+    padding: 0 25px 0;
+    @media screen and (min-width: $large) {
+        padding: 0 70px 0;
+        height: 600px;
+      }
+
+    &__background{
+        background-color: $themeLightGrey;
+        color: $themeGrey;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        height: 490px;
+        @media screen and (min-width: $large) {
+            height: 600px;
+          }
+    }
+
+    &__content{
+    }
+
+    &__up{
+        font-family: $fontFamily;
+        font-weight: 900;
+        font-size: 30px;
+
+    }
+
+    &__down{
+        font-family: $fontFamily;
+        font-weight: 600;
+        font-size: 20px;
+
+
+    }
+}

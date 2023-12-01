@@ -20,15 +20,19 @@
 
   &__whiteSection {
     padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @media screen and (min-width: $medium) {
       padding: 10px 25px;
+      min-height: 105px;
     }
 
     
     @media screen and (min-width: $large) {
       padding: 10px 70px;
     }
-    border-bottom: 2px solid $themeLightGrey;
+    border-bottom: 1px solid $themeBlack;
   }
 
   &__contact{
@@ -40,6 +44,18 @@
     
 
     font-size: 11px;
+
+    &Number{
+      position: absolute;
+      top: -31px;
+      left:0;
+      display: none;
+      @media screen and (min-width: $large) {
+        display:block;
+      }
+
+
+    }
     
     &--bold{
       font-weight: bold;
@@ -62,6 +78,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: 100%;
+      position: relative;
 
       &>*{
         flex: 1;

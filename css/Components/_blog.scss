@@ -1,0 +1,159 @@
+.blog {
+  max-width: 100%;
+  margin: 0 25px;
+  overflow: hidden;
+  @media screen and (min-width: $medium) {
+    margin: 0 70px;
+  }
+
+
+  &__title {
+    margin: 50px auto 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    & h2 {
+      display: inline-block;
+      width: 200px;
+      text-align: center;
+      padding: 0 38px;
+
+      font-family: $fontFamily;
+      font-weight: 600;
+      text-transform: uppercase;
+
+      padding: 0 38px;
+      font-size: 25px;
+      @media screen and (min-width: $large) {
+        font-size: 30px;
+        padding: 0 25px;
+      }
+    }
+
+    &Decoration {
+      width: 430px;
+      height: 1px;
+      border: 1px solid $themeGrey;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__block {
+    &:first-child{
+      display: block;
+    }
+
+    &:nth-child(2){
+      display: none;
+    }
+
+    &:nth-child(3){
+      display: none;
+    }
+    @media screen and (min-width: $large) {
+      display: block !important;
+    }
+
+
+
+    position: relative;
+    margin-right: 20px;
+    height: 510px;
+    @media screen and (min-width: $large) {
+      height: 550px;
+    }
+
+    &:last-child{
+        margin-right: 0;
+    }
+  }
+  &__blockImg {
+    & Img{
+        width: 100%;
+    }
+  }
+
+  &__blockContent {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    background-color: $themeWhite;
+    max-width: 554px;
+
+    margin: 0 10px;
+    padding: 28px 17px 10px;
+    text-align: center;
+    @media screen and (min-width: $large) {
+      margin: 0 13px;
+      padding: 30px 25px 20px;
+    }
+  }
+
+  &__dateArticle {
+    font-family: $fontFamily;
+    letter-spacing: 0.39px;
+    color: $themeLightBlue;
+    padding: 2px;
+    font-size: 12px;
+    @media screen and (min-width: $large) {
+      font-size: 13px;
+    }
+  }
+
+  &__titleArticle {
+    font-family: $fontFamily;
+    font-weight: 900;
+    color: $themeBlack;
+    transition: color ease-out 0.3s;
+    &:hover {
+      color: $themeGrey;
+    }
+    font-size: 20px;
+  }
+
+  &__describeArticle {
+    font-family: $fontFamily;
+    font-size: 13px;
+    margin: 30px 0 20px;
+    line-height: 2em;
+  }
+
+  &__readMoreArticle {
+    font-family: $fontFamily2;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.48px;
+    margin: 20px;
+    transition: color ease-out 0.3s;
+    &:hover {
+      color: $themeGrey;
+    }
+  }
+
+  &__showMoreArticles{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & span{
+      font-family: $fontFamily2;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+      text-decoration: underline;
+      padding: 0 15px;
+    }
+
+    & i{
+      font-size: 10px;
+    }
+  }
+}

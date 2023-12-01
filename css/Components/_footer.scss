@@ -1,0 +1,117 @@
+footer {
+  background-color: $themeBlack;
+  color: $themeWhite;
+  overflow: hidden;
+
+  width: auto;
+  padding: 30px 25px;
+
+  @media screen and (min-width: $large) {
+    padding: 66px 128px;
+  }
+}
+
+.footerContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  @media screen and (min-width: $large) {
+    flex-direction: row;
+  }
+}
+
+.bottomNavigationblock {
+  line-height: 21px;
+
+  &__title {
+    text-align: left;
+    font-family: $fontFamily;
+    font-size: 15px/23px;
+    letter-spacing: 0px;
+    color: $themeWhite;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    text-align: left;
+    font-family: $fontFamily;
+    letter-spacing: 0px;
+    color: $themeGrey;
+  }
+
+  &__list li {
+    margin: 21px 0;
+
+    &:hover{
+        color: $themeWhite;
+        text-decoration: underline;
+    }
+  }
+}
+
+.footerInfo {
+  width: 100%;
+  border-top: 1px solid $themeGrey;
+  padding-top: 32px;
+
+  @media screen and (min-width: $large) {
+    width: auto;
+    border-top: none;
+    padding-top: 0;
+  }
+
+    &__logo{
+        width: 67px;
+        margin-bottom: 47px;
+    }
+
+    &__socialInfo{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 31px;
+
+        &Icon{
+            width: 28px;
+            height: 28px;
+            border: 1px solid $themeIconsGrey;
+            border-radius: 100%;
+            margin-right: 8px;
+            color: $themeWhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & i{
+                color: $themeWhite;
+            }
+        }
+
+    }
+
+    &__contactElement{
+        display: flex;
+        justify-content: flex-start;
+        align-items: self-end;
+        
+
+        margin: 15px 0;
+
+        &Picture{
+            width: 16px;
+            height: 16px;
+            margin-right: 12px
+        }
+
+        &Content{
+            font-family: $fontFamily;
+            font-size: 13px;
+
+            &--big{
+                font-size: 20px;
+            }
+
+        }
+    }
+}
